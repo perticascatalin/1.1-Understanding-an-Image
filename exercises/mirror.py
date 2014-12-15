@@ -1,4 +1,6 @@
 # Source code for 1. Mirror the Image exercise
+# Run: python mirror.py <image_name>
+
 import cv2
 import sys
 

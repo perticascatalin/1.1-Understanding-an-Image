@@ -1,4 +1,5 @@
 # Source code for 2. Make a Puzzle  exercise
+# Run: python puzzle.py <image_name> <no pixels/block side> <border thickness in pixels>
 
 import cv2
 import numpy as np
@@ -58,10 +59,10 @@ def scrambleImage(image, pixs, addBorder):
 
 image_name = sys.argv[1]
 pix_per_square = int(sys.argv[2])
-border_len = int(sys.argv[3])
+border_thick = int(sys.argv[3])
 image = cv2.imread(image_name)
 
-scrambled = scrambleImage(image, pix_per_square, border_len)
+scrambled = scrambleImage(image, pix_per_square, border_thick)
 
 cv2.imwrite(str(pix_per_square) + '_scrambled_' + image_name, scrambled)
 
