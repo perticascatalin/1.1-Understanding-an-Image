@@ -1,4 +1,4 @@
-# Source code for 2. Make a Puzzle  exercise
+# Source code for 2. Make a Puzzle exercise
 # Run: python puzzle.py <image_name> <no pixels/block side> <border thickness in pixels>
 
 import cv2
